@@ -4,7 +4,7 @@ import json
 import pyttsx3
 
 def read_reminders_from_json():
-    with open("C:\\Friday\\reminder.json", "r") as file:
+    with open("reminder.json", "r") as file:
         reminders = json.load(file)
     return reminders
 

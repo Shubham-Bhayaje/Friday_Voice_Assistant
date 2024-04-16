@@ -18,7 +18,7 @@ def listenHotword():
 
 def reminder():
     print("Thread 3 is running.")
-    os.system("python C:\\Friday\\reminder.py")
+    os.system("reminder.py")
 
 
 
