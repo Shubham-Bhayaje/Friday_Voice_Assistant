@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQLite Data</title>
+</head>
+<body>
+</body>
+<button id="Data_cmd" class="nestedDiv_2_glow-on-hover">Data cmd</button>
+<h1 id="myele">hii</h1>
+</body>
+
+
+
+
+<script src="/eel.js"></script>
+
+<script>
+    async function getDataFromPython() {
+        const data = await eel.retrieve_data_from_database()();
+        document.getElementById('myele').innerText = data;
+    }
+
+    document.getElementById('Data_cmd').addEventListener('click', () => {
+        getDataFromPython();
+    });
+</script>
+
+
+</html>
